@@ -26,8 +26,7 @@
 			<div class="top">
 				<div id="logo">
 					<span class="image logo"><img src="/images/logo.png" alt="" /></span>
-					<h1 id="title">Maera</h1>
-					<p>WordPress theme</p>
+					<h1 id="title">{{ page.title }}</h1>
 				</div>
 
 				<nav id="nav">
@@ -51,7 +50,9 @@
 			</div>
 		</div>
 
-		<div id="main">{{ content }}</div>
+		<div id="main">
+			<div class="container">{{ content }}</div>
+		</div>
 
 		<div id="footer">
 			<ul class="copyright"><li>&copy; wpmu.io. All rights reserved.</li></ul>
