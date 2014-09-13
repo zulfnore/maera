@@ -624,3 +624,8 @@ div.highlight .x  { color: #e6db74; }
 div.highlight .s1 { color: #e6db74; }
 div.highlight .mi { color: #f92672; }
 div.highlight .o  { color: #f92672; }
+
+.gist {
+	font-size: 1rem;
+	line-height: 1.1rem;
+}
