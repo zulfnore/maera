@@ -7,7 +7,23 @@ tags: development
 
 Maera makes it easy to create new frameworks.
 
-To create a new framework you can create a new plugin:
+The recommended method to create a new framework is by writing a custom WordPress plugin.
+
+File structure of a framework plugin:
+
+```
+├── assets
+|   └── Stylesheets and scripts
+├── views
+|   └── framework-specific templates
+├── class-Maera_Example.php
+├── framework.html.twig
+└── framework.php
+```
+
+The first step will be to create our main plugin file. In this case we will call this file framework.php  
+It would be best if you could keep the same file structure in your own frameworks to ensure better consistency.
+
 
 ```php
 
