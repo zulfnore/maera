@@ -9,5 +9,4 @@ Maera is a WordPress theme that makes the lives of developers and designers easi
 
 If you're a developer wanting to build on Maera then please continue reading these docs.
 
-* [Frameworks](/docs/frameworks)
-	* [Framework Structure](/docs/frameworks/structure)
+* [Frameworks Documentation](/docs/frameworks)

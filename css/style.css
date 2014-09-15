@@ -593,7 +593,8 @@ ul ul {
 	margin-left: 1em;
 }
 
-div.highlight {
+div.highlight,
+table.highlighttable {
 	font-family: monospace;
 	border-radius: 5px;
 	background: #272822;
@@ -602,6 +603,7 @@ div.highlight {
 	overflow-x: scroll;
 	font-size: 1rem;
 	line-height: 1.1rem;
+	padding: 1rem;
 }
 
 div.highlight code {
@@ -628,4 +630,14 @@ div.highlight .o  { color: #f92672; }
 .gist {
 	font-size: 1rem;
 	line-height: 1.1rem;
+}
+
+td.linenos {
+	background: #303125;
+	padding: 0 .3rem;
+}
+
+code {
+	font-family: monospace;
+	color: #272822;
 }
