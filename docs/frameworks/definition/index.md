@@ -71,4 +71,4 @@ add_filter( 'maera/frameworks/available', 'maera_framework_bootstrap_include' );
 ?>
 ```
 
-Next step: [adding our framework macros](/docs/frameworks/framework-macros)
+Next step: [adding our framework macros](/docs/frameworks/macros)
