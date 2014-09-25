@@ -1,17 +1,17 @@
 ---
 layout: default
-title:  "Building the framework Class"
+title:  "Building the shell Class"
 category: development
 tags: development
 ---
 
-Our main framework class will contain all the functionality of our framework. We will be loading our stylesheets, sripts and anything else required by our framework here.
+Our main shell class will contain all the functionality of our shell. We will be loading our stylesheets, sripts and anything else required by our shell here.
 
 {% highlight php linenos=table %}
 <?php
 
 /**
-* The Framework
+* The Shell
 */
 class Maera_Framework_Core {
 
@@ -19,11 +19,11 @@ class Maera_Framework_Core {
 
 	private function __construct() {
 
-		do_action( 'maera/framework/include_modules' );
+		do_action( 'maera/shell/include_modules' );
 
 		// CAUTION: DO NOT DELETE THIS.
-		if ( ! defined( 'MAERA_FRAMEWORK_PATH' ) ) {
-			define( 'MAERA_FRAMEWORK_PATH', dirname( __FILE__ ) );
+		if ( ! defined( 'MAERA_SHELL_PATH' ) ) {
+			define( 'MAERA_SHELL_PATH', dirname( __FILE__ ) );
 		}
 
 		// Define our compiler.
@@ -32,13 +32,13 @@ class Maera_Framework_Core {
 		// Enqueue the scripts
 		add_action( 'wp_enqueue_scripts', array( $this, 'scripts' ), 110 );
 
-		// Add the framework Timber modifications
+		// Add the shell Timber modifications
 		add_filter( 'timber_context', array( $this, 'timber_extras' ) );
 
 	}
 
 	/**
-	 * This is required to instantianate our framework
+	 * This is required to instantianate our shell
 	 */
 	public static function get_instance() {
 		if ( null == self::$instance ) {
@@ -53,10 +53,10 @@ class Maera_Framework_Core {
 	 */
 	function scripts() {
 
-		wp_register_style( 'example-css', MAERA_EXAMPLE_FRAMEWORK_URL . '/assets/css/style.css' );
+		wp_register_style( 'example-css', MAERA_EXAMPLE_SHELL_URL . '/assets/css/style.css' );
 		wp_enqueue_style( 'example-css' );
 
-		wp_register_script( 'example-js', MAERA_EXAMPLE_FRAMEWORK_URL . '/assets/js/main.js', false, null, false );
+		wp_register_script( 'example-js', MAERA_EXAMPLE_SHELL_URL . '/assets/js/main.js', false, null, false );
 		wp_enqueue_script( 'example-js' );
 
 	}
@@ -81,9 +81,9 @@ class Maera_Framework_Core {
 ?>
 {% endhighlight %}
 
-The above contains the basics of a framework and is just an example.
+The above contains the basics of a shell and is just an example.
 
 **Lines 10-28:** Add any actions & filters we may be using. This is where you'll probably be executing any custom functions that you add to this class. These are executed as soon as the class is intantianatied.  
 **Lines 33-39:** We use the singleton pattern to instantianate our classes, so this is necessary. Also requires line 8: `private static $instance;`  
 **Lines 44-52:** Enqueue our stylesheets and scripts.  
-**Lines 57-68:** Include any customizations that our framework requires to handle our twig template files.  
+**Lines 57-68:** Include any customizations that our shell requires to handle our twig template files.  
