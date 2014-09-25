@@ -5,8 +5,9 @@ category: development
 tags: development, twig
 ---
 
-Maera is a WordPress theme that makes the lives of developers and designers easier. It is framework-agnostic and allows you to create your own shells with ease. We chose to use [twig](http://twig.sensiolabs.org/) as our templating engine instead of plain PHP. This way non-PHP developers can understand the templates and build their own or tweak the existing ones when needed, allowing you to customize your own site and make it just the way you want.
+Maera is a WordPress theme framework that makes the lives of developers and designers easier.
 
-If you're a developer wanting to build on Maera then please continue reading these docs.
+It can be used to quickly and easily create sites and themes using "shells".  
+It uses [twig](http://twig.sensiolabs.org/) as a templating engine instead of plain PHP, allowing non-PHP developers to understand the templates and build their own or tweak the existing ones when needed.
 
-* [Shells Documentation](/docs/shells)
+* [What is a **shell**](/docs/shells)?
