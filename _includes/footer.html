@@ -1,5 +1,12 @@
-<div id="footer">
-	<ul class="copyright"><li>&copy; wpmu.io. All rights reserved.</li></ul>
-</div>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+(function($) {
+	$(function() {
+		$( "#menuLink" ).click( function() {
+			$( "#layout" ).toggleClass( "active" );
+		});
+	});
+})(jQuery);
+</script>
 </body>
 </html>
