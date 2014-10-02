@@ -87,3 +87,5 @@ The above contains the basics of a shell and is just an example.
 **Lines 33-39:** We use the singleton pattern to instantianate our classes, so this is necessary. Also requires line 8: `private static $instance;`  
 **Lines 44-52:** Enqueue our stylesheets and scripts.  
 **Lines 57-68:** Include any customizations that our shell requires to handle our twig template files.  
+
+Next step: [adding our custom templates](/docs/shells/views).

@@ -71,4 +71,4 @@ add_filter( 'maera/shells/available', 'maera_shell_bootstrap_include' );
 ?>
 ```
 
-Next step: [adding our shell macros](/docs/shells/macros)
+Next step: [adding our shell macros](/docs/shells/macros).
